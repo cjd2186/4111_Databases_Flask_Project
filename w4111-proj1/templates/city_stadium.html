@@ -1,0 +1,139 @@
+<head>
+  <h1> Search Results</h1>
+    <table border=1>
+      <thead>
+        <th> Stadium Name</th>
+        <th> City</th>
+        <th> Sponsor</th>
+        <th> Home Team </th>
+      </thead>
+      
+      <tbody>
+        <script>
+          function displayImage(){
+            var city = "{{name}}";
+            console.log(city);
+            var imgURL= "";          
+            if (city == "new_york"){
+              imgURL="https://www.stadiumsofprofootball.com/wp-content/uploads/2016/07/metlifegiants2012955.jpg";
+              console.log("yes");
+            }
+            else if (city == "las_vegas"){
+              x="https://s.yimg.com/uu/api/res/1.2/5_1P2DRY.ey98uR7_nQ5CA--~B/aD0xMzMzO3c9MjAwMDtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/people_218/46b03bf7d49b34a91c1d132de41fe2d7";
+            }
+            else if (city == "kansas_city"){
+              x="https://th.bing.com/th/id/OIP.bNnsdvtUS3xCftXwRnsQTgHaFj?pid=ImgDet&rs=1";
+            }
+            else if (city == "dallas"){
+              x="https://th.bing.com/th/id/OIP.ihJzZvplJGlYp5h757zI7AHaFj?pid=ImgDet&rs=1";
+            }
+            else if (city == "charlotte"){
+              image.src="https://www.wccbcharlotte.com/content/uploads/2020/08/Carolina-Panthers-Bank-of-America-Stadium.jpg";
+            }
+            else if (city == "new_orleans"){
+              image.src="https://th.bing.com/th/id/OIP.On46bB-kzPs-r7vRteAZfQHaEK?pid=ImgDet&rs=1";
+            }
+            else if (city == "washington_dc"){
+              image.src="https://www.nbcsports.com/sites/rsnunited/files/styles/metatags_opengraph/public/article/hero/USATSI_14927623.jpg";
+            }
+            else if (city == "cleveland"){
+              image.src="https://th.bing.com/th/id/R.877cda222c6f2326a480371b3e9f4d6f?rik=8EFCp9M%2bQHzF8Q&pid=ImgRaw&r=0";
+            }
+            else if (city == "detroit"){
+              image.src="https://th.bing.com/th/id/R.094e95989ae81e347e130fdff0e337a4?rik=FCTYSiWj5T8Esg&riu=http%3a%2f%2fwww.teamdraft.org%2fassets%2fford-field-4-1.jpg&ehk=4LrRBMrhACbtZVF7wW9HlkEc9OxXsVhDScWfUadVdn0%3d&risl=&pid=ImgRaw&r=0";
+            }
+            else if (city == "new_england"){
+              image.src="https://th.bing.com/th/id/R.4367ba6fac8bc9a8f5135fee3776d2d5?rik=Je%2fIoV6vmQZZFg&riu=http%3a%2f%2fa.espncdn.com%2fphoto%2f2013%2f1013%2fbos_e_gillette_1920x1080.jpg&ehk=DvRNT7SxmHw9zH0vpFw%2f46rxvgNdUVvaY3oA6mgM1nc%3d&risl=&pid=ImgRaw&r=0";
+            }
+            else if (city == "miami"){
+              image.src="https://th.bing.com/th/id/R.3ec30ed3ad0f202b63ee89efb98ab880?rik=C0WdnInMRkn82A&pid=ImgRaw&r=0";
+            }
+            else if (city == "pittsburgh"){
+              image.src="https://th.bing.com/th/id/R.1bb46aa3cc74ebe71fe9e5f787a98841?rik=fHXbKYOqgnGpKA&riu=http%3a%2f%2fa2.espncdn.com%2fcombiner%2fi%3fimg%3d%2fphoto%2f2014%2f0519%2fnfl_u_heinzts_1296x729.jpg&ehk=k6dX7ScMUWRWNUleIZvFF1Omnt76oY60TuGK3MzeSpw%3d&risl=&pid=ImgRaw&r=0";
+            }
+            else if (city == "buffalo"){
+              image.src="https://th.bing.com/th/id/OIP.8PZZzGaiREzlZ0CYkNfuFAHaD4?pid=ImgDet&rs=1";
+            }
+            else if (city == "green_bay"){
+              image.src="https://th.bing.com/th/id/R.4626647cc6e4f181d4c8e89ba2ad3761?rik=WS0PbYgt3v7ttg&riu=http%3a%2f%2fimages.midwestliving.mdpcdn.com%2fsites%2fmidwestliving.com%2ffiles%2f103165845_w.jpg&ehk=HylswjSQfSi8HmY5cts1EowXlUNmVSOxL3Wx5b5%2bawA%3d&risl=&pid=ImgRaw&r=0";
+            }
+            else if (city == "san_francisco"){
+              image.src="https://th.bing.com/th/id/R.528900c76d1fa3c8b8bb002ac5388d70?rik=2e%2byRKL%2fWtmHIQ&pid=ImgRaw&r=0";
+            }
+            else if (city == "philadelphia"){
+              image.src="https://th.bing.com/th/id/R.9fafaf8ef131fa5fdcd2fca6543f2f2c?rik=LIF7pTyLNOCtNA&pid=ImgRaw&r=0";
+            }
+            else if (city == "indianapolis"){
+              image.src="https://i5.walmartimages.com/asr/6764ff8f-1144-44f8-9a1a-9d926596d61c.9eaa8dac91e13ba9ea94d7ad66644056.jpeg";
+            }
+            else if (city == "seattle"){
+              image.src="https://th.bing.com/th/id/R.9916ee950fdd8bc552cf8cda0f05198a?rik=HUwt4%2ftWnHqRtA&pid=ImgRaw&r=0";
+            }
+            else if (city == "baltimore"){
+              image.src="https://th.bing.com/th/id/R.ff115dacbe56f90639949cacd835cd8e?rik=rTvjDBmJ1ocjSQ&pid=ImgRaw&r=0";
+            }
+            else if (city == "atlanta"){
+              image.src="https://th.bing.com/th/id/OIP.tdP9siP8iEWKXoGMIpogYwHaEs?pid=ImgDet&rs=1";
+            }
+            else if (city == "denver"){
+              image.src="https://www.gannett-cdn.com/-mm-/3658fd42755583d64b04f69690f6d4a6f28401aa/c=0-270-5184-3186/local/-/media/2019/09/06/FortCollins/broncos-stadium-naming-rights.jpg?width=3200&height=1680&fit=crop";
+            }
+            else if (city == "nashville"){
+              image.src="https://th.bing.com/th/id/OIP.AfWPcJuwLBOChD8GWmEmKgHaD4?pid=ImgDet&rs=1";
+            }
+            else if (city == "houston"){
+              image.src="https://i.pinimg.com/originals/45/01/f4/4501f4e564e58ebbec4db5b2ca1cc942.jpg";
+            }
+            else if (city == "cincinnati"){
+              image.src="https://i5.walmartimages.com/asr/b69643bf-bedd-46f4-8026-a9744cdcb623.b63cc73093c222abd46d09241c8f690c.jpeg";
+            }
+            else if (city == "tampa_bay"){
+              image.src="https://media.bizj.us/view/img/11571583/raymond-james-stadium-stock-1-2-20-01*1200xx1798-1011-0-95.jpg";
+            }
+            else if (city == "los_angeles"){
+              image.src="https://th.bing.com/th/id/R.4c2817de8eeb993d749ae5d55547eddc?rik=RpRY5oqtHqHeGg&pid=ImgRaw&r=0";
+            }
+            else if (city == "chicago"){
+              image.src="https://th.bing.com/th/id/OIP.ZCSV4aWzL8u0Fj3EYf1wXQHaEK?pid=ImgDet&rs=1";
+            }
+            else if (city == "phoenix"){
+              image.src="https://cdn.shopify.com/s/files/1/0589/1069/products/Cardinals_Stadium_-_AASM106_1800x.jpg?v=1583262379";
+            }
+            else if (city == "jacksonville"){
+              image.src="https://th.bing.com/th/id/OIP.d2NfY4SQixHy3hjjlI_3ygHaFM?pid=ImgDet&rs=1";
+            }
+            else if (city == "minneapolis"){
+              image.src="https://th.bing.com/th/id/OIP.gygSw_k2URmNMRRnKnvl9gHaE8?pid=ImgDet&rs=1";
+            }
+            document.getElementById("city-1").src=imgURL;
+          }
+        </script>
+      <body onload= "displayImage()">
+        <div class= "image-area">
+          <div class= "image-wrapper">
+            <img src="" id="city-1" alt="image">
+          </div>
+        </div>
+      </body>
+
+      {% for row in rows %}
+      <tr>
+        <br>
+        <td>{{ row.name }}</td>
+        <br>
+        <td>{{ row.city}}</td>
+        <br>
+        <td>{{ row.sponsor}}</td>
+        <br>
+        <td>{{ row.team_name}}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+
+<h1>   </h1>
+<h4> Click the helmet to go back to Homepage!</h4>
+<a href="/">
+    <img src="https://i.pinimg.com/originals/00/46/68/004668ec18bf895a88d008ade7551829.jpg" alt="Home" width="50" height="50">
+</a>
+  

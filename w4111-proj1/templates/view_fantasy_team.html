@@ -1,0 +1,74 @@
+<h1> Search Results</h1>
+
+<table border="1">
+    <thead>
+      <tr>
+        <th> Name</th>
+        <th> Position</th>
+        <th> Team</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in team_rows %}
+        <tr>
+          <td>{{ row.name }}</td>
+          <td>{{ row.position}}</td>
+          <td>{{ row.team}}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+<br>
+<br>
+<br>
+
+<form method="POST" action="/add_player_to_fantasy_team">
+    <label for="search1">Add player:</label> 
+        <input type="string" id="search1" name="person_id" placeholder="Enter ID">
+    <button type="submit">Add</button>
+</form> 
+
+<form method="POST" action="/remove_player_from_fantasy_team">
+    <label for="search1">Remove player:</label> 
+        <input type="string" id="search1" name="person_id" placeholder="Enter ID">
+    <button type="submit">Remove</button>
+</form> 
+
+
+<br>
+<form method="POST" action="/get_person_id">
+    <label for="search1">Get ID:</label> 
+        <input type="string" id="search1" name="player_name" placeholder="Enter player name, eg. patrick_mahomes">
+    <button type="submit">Enter</button>
+</form> 
+
+
+<table border="1">
+    <thead>
+      <tr>
+        <th> ID</th>
+        <th> Name</th>
+        <th> Position</th>
+        <th> Team</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in person_id_rows %}
+        <tr>
+          <td>{{ row.person_id }}</td>
+          <td>{{ row.name }}</td>
+          <td>{{ row.position}}</td>
+          <td>{{ row.team}}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+
+
+<h4> Click the helmet to go back to Homepage!</h4>
+<a href="/">
+    <img src="https://i.pinimg.com/originals/00/46/68/004668ec18bf895a88d008ade7551829.jpg" alt="Home" width="50" height="50">
+</a>
+  

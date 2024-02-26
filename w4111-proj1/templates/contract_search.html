@@ -1,0 +1,32 @@
+<h1> Search Results</h1>
+<table border="1">
+    <thead>
+      <tr>
+        <th> ID</th>
+        <th> Name</th>
+        <th> Team</th>
+        <th> Amount </th>
+        <th> Start Year</th>
+        <th> Term</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in rows %}
+        <tr>
+          <td>{{ row.person_id }}</td>
+          <td>{{ row.name}}</td>
+          <td>{{ row.team}}</td>
+          <td>{{ row.amount}}</td>
+          <td>{{ row.start_year}}</td>
+          <td>{{ row.term}}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+<h1>   </h1>
+<h4> Click the helmet to go back to Homepage!</h4>
+<a href="/">
+    <img src="https://i.pinimg.com/originals/00/46/68/004668ec18bf895a88d008ade7551829.jpg" alt="Home" width="50" height="50">
+</a>
+  

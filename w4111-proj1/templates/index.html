@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <h1> THE Fantasy Football Database</h1>
+  <head>
+    <link rel="stylesheet" href="templates/index.css">
+  </head>
+
+  <style>
+    body{ 
+      font-size: 15pt;
+      font-family: arial;
+    }
+  </style>
+
+
+
+<body>
+	<h2> Players Featured in this Database: </h2>
+	<div class="grid-container">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3139477.png&w=350&h=254" width="175" height="127" alt="Patrick Mahomes">
+				<h4>Patrick Mahomes</h4>
+			</div>
+    <div class="row">
+			<div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3918298.png&w=350&h=254" width="175" height="127" alt="Josh Allen">
+				<h4>Josh Allen</h4>
+			</div>
+    <div class="row">
+			<div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/12483.png&w=350&h=254" width="175" height="127" alt="Matthew Stafford">
+				<h4>Matthew Stafford</h4>
+			</div>
+    <div class="row">
+      <div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3916387.png&w=350&h=254" width="175" height="127" alt="Lamar Jackson">
+				<h4>Lamar Jackson</h4>
+			</div>
+	  <div class="row">
+      <div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/8439.png&w=350&h=254" width="175" height="127" alt="Aaron Rodgers">
+				<h4>Aaron Rodgers</h4>
+			</div>
+	  <div class="row">
+      <div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3046779.png&w=350&h=254" width="175" height="127" alt="Jared Goff">
+				<h4>Jared Goff</h4>
+			</div>
+    <div class="row">
+      <div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3929630.png&w=350&h=254" width="175" height="127" alt="Saquon Barkley">
+				<h4>Saquon Barkley</h4>
+			</div>
+    <div class="row">
+      <div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4040715.png&w=350&h=254" width="175" height="127" alt="Jalen Hurts">
+				<h4>Jalen Hurts</h4>
+			</div>
+    <div class="row">
+      <div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3915511.png&w=350&h=254" width="175" height="127" alt="Joe Burrow">
+				<h4>Joe Burrow</h4>
+			</div>
+    <div class="row">
+      <div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16737.png&w=350&h=254" width="175" height="127" alt="Mike Evans">
+				<h4>Mike Evans</h4>
+			</div>
+    <div class="row">
+      <div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3040151.png&w=350&h=254" width="175" height="127" alt="George Kittle">
+				<h4>George Kittle</h4>
+			</div>
+	  <div class="row">
+      <div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4036378.png&w=350&h=254" width="175" height="127" alt="Jordan Love">
+				<h4>Jordan Love</h4>
+			</div>
+    <div class="row">
+      <div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3116165.png&w=350&h=254" width="175" height="127" alt="Chris Godwin">
+				<h4>Chris Godwin</h4>
+			</div>
+    <div class="row">
+      <div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3916945.png&w=350&h=254" width="175" height="127" alt="Darius Slayton">
+				<h4>Darius Slayton</h4>
+			</div>
+	  <div class="row">
+      <div class="col-md-4">
+				<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/15864.png&w=350&h=254" width="175" height="127" alt="Geno Smith">
+				<h4>Geno Smith</h4>
+			</div>
+		</div>
+	</div>
+
+<br>
+<h3> Search players by stats: </h3> 
+<form method="POST" action="/Search_a_Player">
+  <label for="search1">Lowerbound for passing yards:</label>
+    <input type="integer" id="search1" name="passing_lower" placeholder="1">  
+  
+  <label for="search2">Upperbound for passing yards:</label>
+    <input type="integer" id="search2" name="passing_upper" placeholder="10000"> 
+  <br>
+  <label for="search3">Lowerbound for rushing yards:</label>
+    <input type="integer" id="search3" name="rushing_lower" placeholder="1">  
+  
+  <label for="search4">Upperbound for rushing yards:</label>
+    <input type="integer" id="search4" name="rushing_upper" placeholder="10000"> 
+
+  <br>
+  <label for="search5">Lowerbound for receiving yards:</label>
+    <input type="integer" id="search5" name="receiving_lower" placeholder="1">  
+  
+  <label for="search6">Upperbound for receiving yards:</label>
+    <input type="integer" id="search6" name="receiving_upper" placeholder="10000"> 
+
+  <br>
+  <label for="search7">Lowerbound for total touchdowns:</label>
+    <input type="integer" id="search7" name="tds_lower" placeholder="0">  
+
+  <label for="search8">Upperbound for total touchdowns:</label>
+    <input type="integer" id="search8" name="tds_upper" placeholder="50"> 
+
+
+    
+  <button type="submit">Search</button>
+</form>
+
+<br>  
+<h3> Search stadiums: </h3>  
+<form method="POST" action="/city_stadium">
+  <label for="search9">What NFL Stadiums are in your city?:</label>
+    <input type="text" id="search9" name="city_name" placeholder="new_york">  
+    <button type="submit">Search</button>
+</form>
+       
+<br>  
+<h3> Find the mascot of your favorite team: </h3>       
+<form method="POST" action="/mascot_search">
+	<label for="search10">Type the name of your favorite team:</label>
+    <input type="text" id="search10" name="team_name" placeholder="giants">  
+    <button type="submit">Search</button>
+</form>  
+
+<br>  
+<h3> Find the games your favorite team played: </h3>       
+<form method="POST" action="/game_search">
+	<label for="search11">Type the name of your favorite team:</label>
+    <input type="text" id="search11" name="team_name" placeholder="giants">  
+    <button type="submit">Search</button>
+</form>         
+
+<br>  
+<h3> Search player contracts: </h3>  
+<form method="POST" action="/player_contract">
+  <label for="search12">Enter ID:</label>
+    <input type="text" id="search12" name="person_id" placeholder="eg. PL001">  
+    <button type="submit">Search</button>
+</form>
+
+        
+<br>  
+<h3> Search for information about your favorite team (eg coach, record etc): </h3>  
+<form method="POST" action="/team_search">
+  <label for="search12">Enter ID:</label>
+    <input type="text" id="search13" name="team_name" placeholder="eg. giants">  
+    <button type="submit">Search</button>
+</form>
+        
+        
+<br>  
+<h3> Access your existing fantasy teams: </h3>         
+<form method="POST" action="/view_fantasy_team">
+    <label for="search10">Enter team name:</label> 
+        <input type="string" id="search10" name="team_name">
+    <label for="search11">Enter password:</label> 
+        <input type="string" id="search11" name="password"> 
+    <br>
+    <button type="submit">View Your Fantasy Team</button>
+</form>        
+    
+<br>  
+<h3> Or create a new fantasy team: </h3>       
+<form method="POST" action="/goto_create_fantasy_team">
+    <button type="submit">Create New Fantasy Team</button>
+</form>     
+       
+
+<br>
+<br>
+<br>
+
+</body>
+
+
+</html>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        

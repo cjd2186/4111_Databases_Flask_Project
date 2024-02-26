@@ -1,0 +1,30 @@
+<h1> Search Results</h1>
+<table border="1">
+    <thead>
+      <tr>
+        <th> Name</th>
+        <th> Passing Yards</th>
+        <th> Rushing Yards</th>
+        <th> Receiving Yards </th>
+        <th> Total Touchdowns</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in rows %}
+        <tr>
+          <td>{{ row.name }}</td>
+          <td>{{ row.passing_yds}}</td>
+          <td>{{ row.rushing_yds}}</td>
+          <td>{{ row.receiving_yds}}</td>
+          <td>{{ row.total_tds}}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+<h1>   </h1>
+<h4> Click the helmet to go back to Homepage!</h4>
+<a href="/">
+    <img src="https://i.pinimg.com/originals/00/46/68/004668ec18bf895a88d008ade7551829.jpg" alt="Home" width="50" height="50">
+</a>
+  

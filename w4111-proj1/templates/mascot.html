@@ -1,0 +1,25 @@
+<h1> Search Results</h1>
+<table border="1">
+    <thead>
+      <tr>
+        <th> Team Name</th>
+        <th> Mascot Name</th>
+        <th> Mascot Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in rows %}
+        <tr>
+          <td>{{ row.team_name }}</td>
+          <td>{{ row.mascot_name}}</td>
+          <td>{{ row.mascot_description}}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+<h1>   </h1>
+<h4> Click the helmet to go back to Homepage!</h4>
+<a href="/">
+    <img src="https://i.pinimg.com/originals/00/46/68/004668ec18bf895a88d008ade7551829.jpg" alt="Home" width="50" height="50">
+</a>
